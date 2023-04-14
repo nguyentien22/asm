@@ -1,0 +1,14 @@
+{% block body %}
+{{ form_start(registrationForm) }}
+<div class="form-group">
+    {{ form_row(registrationForm.email, {'attr': {'class': 'form-control'}}) }}
+</div>
+<div class="form-group">
+    {{ form_row(registrationForm.plainPassword, {'attr': {'class': 'form-control'}}) }}
+</div>
+    <div class="form-outline">
+            {{ form_row(registrationForm.agreeTerms) }}
+    </div>
+<button class="btn {{ button_color|default('btn-outline-dark') }}  mt-3" type="submit" style="border-radius: 2em">Create</button>
+{{ form_end(registrationForm) }}
+{% endblock %}

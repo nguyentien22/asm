@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+    <div class="container py-5 h-100">
+        <h2 class="text-center mt-5 mb-3 w3-bar w3-white w3-wide w3-padding">Contact us</h2>
+        <div class="card" style="border-radius: 2em; border: 1px solid #212529" >
+            <div class="card-body" style="padding: 2em ">
+                {{ include('contact/_form.html.twig') }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
